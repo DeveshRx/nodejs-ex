@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Ephrine-Apps-NodeJs</Name>
+    <RootNamespace>Ephrine-Apps-NodeJs</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>fbc167c6-8637-4229-8b9b-a21749bfbb66</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app.js" />
+    <Content Include="app.yaml" />
+    <Content Include="public\about.html" />
+    <Content Include="public\app-development.html" />
+    <Content Include="public\app-gallery.html" />
+    <Content Include="public\blog.html" />
+    <Content Include="public\bootstrap\4.4.1\css\bootstrap.min.css" />
+    <Content Include="public\bootstrap\4.5.0\css\bootstrap-grid.css" />
+    <Content Include="public\bootstrap\4.5.0\css\bootstrap-grid.css.map" />
+    <Content Include="public\bootstrap\4.5.0\css\bootstrap-grid.min.css" />
+    <Content Include="public\bootstrap\4.5.0\css\bootstrap-grid.min.css.map" />
+    <Content Include="public\bootstrap\4.5.0\css\bootstrap-reboot.css" />
+    <Content Include="public\bootstrap\4.5.0\css\bootstrap-reboot.css.map" />
+    <Content Include="public\bootstrap\4.5.0\css\bootstrap-reboot.min.css" />
+    <Content Include="public\bootstrap\4.5.0\css\bootstrap-reboot.min.css.map" />
+    <Content Include="public\bootstrap\4.5.0\css\bootstrap.css" />
+    <Content Include="public\bootstrap\4.5.0\css\bootstrap.css.map" />
+    <Content Include="public\bootstrap\4.5.0\css\bootstrap.min.css" />
+    <Content Include="public\bootstrap\4.5.0\css\bootstrap.min.css.map" />
+    <Content Include="public\bootstrap\4.5.0\js\bootstrap.bundle.js" />
+    <Content Include="public\bootstrap\4.5.0\js\bootstrap.bundle.js.map" />
+    <Content Include="public\bootstrap\4.5.0\js\bootstrap.bundle.min.js" />
+    <Content Include="public\bootstrap\4.5.0\js\bootstrap.bundle.min.js.map" />
+    <Content Include="public\bootstrap\4.5.0\js\bootstrap.js" />
+    <Content Include="public\bootstrap\4.5.0\js\bootstrap.js.map" />
+    <Content Include="public\bootstrap\4.5.0\js\bootstrap.min.js" />
+    <Content Include="public\bootstrap\4.5.0\js\bootstrap.min.js.map" />
+    <Content Include="public\contact.html" />
+    <Content Include="public\cors\index.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\css\style.css" />
+    <Content Include="public\curl.html" />
+    <Content Include="public\img\android_white_48dp.png" />
+    <Content Include="public\img\applab800px.jpg" />
+    <Content Include="public\img\blue-and-silver-stetoscope-100px.jpg" />
+    <Content Include="public\img\blue-and-silver-stetoscope-500px.jpg" />
+    <Content Include="public\img\close-up-code-coding-160107.jpg" />
+    <Content Include="public\img\close-up-of-apple-on-top-of-books-100px.jpg" />
+    <Content Include="public\img\close-up-of-apple-on-top-of-books-500px.jpg" />
+    <Content Include="public\img\creation800px.jpg" />
+    <Content Include="public\img\dream-journal-icon512.png" />
+    <Content Include="public\img\dream_journal_app_feat.png" />
+    <Content Include="public\img\ephrine1.png" />
+    <Content Include="public\img\ephrine_apps_apps_glow.png" />
+    <Content Include="public\img\ephrine_trans_glow_white300px.png" />
+    <Content Include="public\img\fb-logo.png" />
+    <Content Include="public\img\GitHub-Mark-Light-64px.png" />
+    <Content Include="public\img\google_play_en_badge_web_generic.png" />
+    <Content Include="public\img\gpat-one-logo.png" />
+    <Content Include="public\img\gpat_app_feat.png" />
+    <Content Include="public\img\iboot-logo.png" />
+    <Content Include="public\img\In-Blue-48.png" />
+    <Content Include="public\img\instagram-logo.png" />
+    <Content Include="public\img\ir-logo.png" />
+    <Content Include="public\img\ir_detector_app_feat.webp" />
+    <Content Include="public\img\jinx-icon.png" />
+    <Content Include="public\img\jinx_banner_pic500px.webp" />
+    <Content Include="public\img\medic-dose-logo.png" />
+    <Content Include="public\img\medic_dose_feat.webp" />
+    <Content Include="public\img\pexelsphoto29781.jpg" />
+    <Content Include="public\img\pharmahub.png" />
+    <Content Include="public\img\PharmaHubGooglePlayFeatBanner.png" />
+    <Content Include="public\img\qrlite-icon.png" />
+    <Content Include="public\img\qr_lite_app_feat.png" />
+    <Content Include="public\img\research1000px.jpg" />
+    <Content Include="public\img\ss\ss1.png" />
+    <Content Include="public\img\ss\ss2.png" />
+    <Content Include="public\img\ss\ss3.png" />
+    <Content Include="public\img\ss\ss4.png" />
+    <Content Include="public\img\store\abstract100px.jpg" />
+    <Content Include="public\img\store\abstract500px.jpg" />
+    <Content Include="public\img\store\the-enchantress-by-devesh-chaudhari-cover.png" />
+    <Content Include="public\img\store\the-enchantress-by-devesh-chaudhari-cover100px.jpg" />
+    <Content Include="public\img\store\the-enchantress-by-devesh-chaudhari-cover200px.jpg" />
+    <Content Include="public\img\woman-in-grey-jacket-sits-on-bed-uses-grey-laptop-100px.jpg" />
+    <Content Include="public\img\woman-in-grey-jacket-sits-on-bed-uses-grey-laptop-500px.jpg" />
+    <Content Include="public\index.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\js\main.js" />
+    <Content Include="public\owlcarousel\owl.carousel.min.css" />
+    <Content Include="public\owlcarousel\owl.carousel.min.js" />
+    <Content Include="public\owlcarousel\owl.theme.default.min.css" />
+    <Content Include="public\panchakarma\404.html" />
+    <Content Include="public\panchakarma\css\.DS_Store" />
+    <Content Include="public\panchakarma\css\animate.min.css" />
+    <Content Include="public\panchakarma\css\bootstrap.css" />
+    <Content Include="public\panchakarma\css\bootstrap.map" />
+    <Content Include="public\panchakarma\css\bootstrap\bootstrap-grid.css" />
+    <Content Include="public\panchakarma\css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="public\panchakarma\css\bootstrap\bootstrap.css" />
+    <Content Include="public\panchakarma\css\font-awesome.min.css" />
+    <Content Include="public\panchakarma\css\hexagons.min.css" />
+    <Content Include="public\panchakarma\css\jquery.DonutWidget.min.css" />
+    <Content Include="public\panchakarma\css\jquerysctipttop.css" />
+    <Content Include="public\panchakarma\css\linearicons.css" />
+    <Content Include="public\panchakarma\css\magnific-popup.css" />
+    <Content Include="public\panchakarma\css\main.css" />
+    <Content Include="public\panchakarma\css\main.css.map" />
+    <Content Include="public\panchakarma\css\main.map" />
+    <Content Include="public\panchakarma\css\nice-select.css" />
+    <Content Include="public\panchakarma\css\owl.carousel.css" />
+    <Content Include="public\panchakarma\css\theme\pages.css" />
+    <Content Include="public\panchakarma\elements.html" />
+    <Content Include="public\panchakarma\favicon100px.png" />
+    <Content Include="public\panchakarma\favicon32px.png" />
+    <Content Include="public\panchakarma\fonts\fontawesome-webfont.eot" />
+    <Content Include="public\panchakarma\fonts\fontawesome-webfont.svg" />
+    <Content Include="public\panchakarma\fonts\fontawesome-webfont.ttf" />
+    <Content Include="public\panchakarma\fonts\fontawesome-webfont.woff" />
+    <Content Include="public\panchakarma\fonts\fontawesome-webfont.woff2" />
+    <Content Include="public\panchakarma\fonts\FontAwesome.otf" />
+    <Content Include="public\panchakarma\fonts\Linearicons-Free.eot" />
+    <Content Include="public\panchakarma\fonts\Linearicons-Free.svg" />
+    <Content Include="public\panchakarma\fonts\Linearicons-Free.ttf" />
+    <Content Include="public\panchakarma\fonts\Linearicons-Free.woff" />
+    <Content Include="public\panchakarma\fonts\Linearicons-Free.woff2" />
+    <Content Include="public\panchakarma\img\.DS_Store" />
+    <Content Include="public\panchakarma\img\about-img.png" />
+    <Content Include="public\panchakarma\img\app-store1.jpg" />
+    <Content Include="public\panchakarma\img\app-store2.jpg" />
+    <Content Include="public\panchakarma\img\b1.jpg" />
+    <Content Include="public\panchakarma\img\b2.jpg" />
+    <Content Include="public\panchakarma\img\banner-2.jpg" />
+    <Content Include="public\panchakarma\img\banner-img.png" />
+    <Content Include="public\panchakarma\img\banner.jpg" />
+    <Content Include="public\panchakarma\img\blog\.DS_Store" />
+    <Content Include="public\panchakarma\img\blog\ads-banner.jpg" />
+    <Content Include="public\panchakarma\img\blog\blog-home-banner.jpg" />
+    <Content Include="public\panchakarma\img\blog\c1.jpg" />
+    <Content Include="public\panchakarma\img\blog\c2.jpg" />
+    <Content Include="public\panchakarma\img\blog\c3.jpg" />
+    <Content Include="public\panchakarma\img\blog\c4.jpg" />
+    <Content Include="public\panchakarma\img\blog\c5.jpg" />
+    <Content Include="public\panchakarma\img\blog\c6.jpg" />
+    <Content Include="public\panchakarma\img\blog\cat-widget1.jpg" />
+    <Content Include="public\panchakarma\img\blog\cat-widget2.jpg" />
+    <Content Include="public\panchakarma\img\blog\cat-widget3.jpg" />
+    <Content Include="public\panchakarma\img\blog\feature-img1.jpg" />
+    <Content Include="public\panchakarma\img\blog\feature-img2.jpg" />
+    <Content Include="public\panchakarma\img\blog\feature-img3.jpg" />
+    <Content Include="public\panchakarma\img\blog\feature-img4.jpg" />
+    <Content Include="public\panchakarma\img\blog\feature-img5.jpg" />
+    <Content Include="public\panchakarma\img\blog\next.jpg" />
+    <Content Include="public\panchakarma\img\blog\post-img1.jpg" />
+    <Content Include="public\panchakarma\img\blog\post-img2.jpg" />
+    <Content Include="public\panchakarma\img\blog\pp1.jpg" />
+    <Content Include="public\panchakarma\img\blog\pp2.jpg" />
+    <Content Include="public\panchakarma\img\blog\pp3.jpg" />
+    <Content Include="public\panchakarma\img\blog\pp4.jpg" />
+    <Content Include="public\panchakarma\img\blog\prev.jpg" />
+    <Content Include="public\panchakarma\img\blog\s-img.jpg" />
+    <Content Include="public\panchakarma\img\blog\user-info.png" />
+    <Content Include="public\panchakarma\img\elements\a.jpg" />
+    <Content Include="public\panchakarma\img\elements\a2.jpg" />
+    <Content Include="public\panchakarma\img\elements\d.jpg" />
+    <Content Include="public\panchakarma\img\elements\disabled-check.png" />
+    <Content Include="public\panchakarma\img\elements\disabled-radio.png" />
+    <Content Include="public\panchakarma\img\elements\f1.jpg" />
+    <Content Include="public\panchakarma\img\elements\f2.jpg" />
+    <Content Include="public\panchakarma\img\elements\f3.jpg" />
+    <Content Include="public\panchakarma\img\elements\f4.jpg" />
+    <Content Include="public\panchakarma\img\elements\f5.jpg" />
+    <Content Include="public\panchakarma\img\elements\f6.jpg" />
+    <Content Include="public\panchakarma\img\elements\f7.jpg" />
+    <Content Include="public\panchakarma\img\elements\f8.jpg" />
+    <Content Include="public\panchakarma\img\elements\g1.jpg" />
+    <Content Include="public\panchakarma\img\elements\g2.jpg" />
+    <Content Include="public\panchakarma\img\elements\g3.jpg" />
+    <Content Include="public\panchakarma\img\elements\g4.jpg" />
+    <Content Include="public\panchakarma\img\elements\g5.jpg" />
+    <Content Include="public\panchakarma\img\elements\g6.jpg" />
+    <Content Include="public\panchakarma\img\elements\g7.jpg" />
+    <Content Include="public\panchakarma\img\elements\g8.jpg" />
+    <Content Include="public\panchakarma\img\elements\primary-check.png" />
+    <Content Include="public\panchakarma\img\elements\primary-radio.png" />
+    <Content Include="public\panchakarma\img\elements\success-check.png" />
+    <Content Include="public\panchakarma\img\elements\success-radio.png" />
+    <Content Include="public\panchakarma\img\feature-bg.jpg" />
+    <Content Include="public\panchakarma\img\footer-bg.jpg" />
+    <Content Include="public\panchakarma\img\gplay_feat.png" />
+    <Content Include="public\panchakarma\img\home-banner-bg.jpg" />
+    <Content Include="public\panchakarma\img\iphone.png" />
+    <Content Include="public\panchakarma\img\logo.png" />
+    <Content Include="public\panchakarma\img\os1.jpg" />
+    <Content Include="public\panchakarma\img\os2.jpg" />
+    <Content Include="public\panchakarma\img\os3.jpg" />
+    <Content Include="public\panchakarma\img\panchakarma.jpg" />
+    <Content Include="public\panchakarma\img\play-btn.png" />
+    <Content Include="public\panchakarma\img\quote.png" />
+    <Content Include="public\panchakarma\img\screenshots\.DS_Store" />
+    <Content Include="public\panchakarma\img\screenshots\s1.png" />
+    <Content Include="public\panchakarma\img\screenshots\s2.jpg" />
+    <Content Include="public\panchakarma\img\screenshots\s2.png" />
+    <Content Include="public\panchakarma\img\screenshots\s3.jpg" />
+    <Content Include="public\panchakarma\img\screenshots\s3.png" />
+    <Content Include="public\panchakarma\img\screenshots\s4.jpg" />
+    <Content Include="public\panchakarma\img\screenshots\s4.png" />
+    <Content Include="public\panchakarma\img\screenshots\Xs1.jpg" />
+    <Content Include="public\panchakarma\img\ss1.png" />
+    <Content Include="public\panchakarma\img\ss2.png" />
+    <Content Include="public\panchakarma\img\testimonial\.DS_Store" />
+    <Content Include="public\panchakarma\img\testimonial\t1.jpg" />
+    <Content Include="public\panchakarma\img\testimonial\t2.jpg" />
+    <Content Include="public\panchakarma\img\testimonial\t3.jpg" />
+    <Content Include="public\panchakarma\img\testimonial\t4.jpg" />
+    <Content Include="public\panchakarma\img\user.png" />
+    <Content Include="public\panchakarma\img\video-bg.jpg" />
+    <Content Include="public\panchakarma\img\Xbanner-img.png" />
+    <Content Include="public\panchakarma\img\Xbanner.jpg" />
+    <Content Include="public\panchakarma\img\Xhome-banner-bg.jpg" />
+    <Content Include="public\panchakarma\img\Xlogo.png" />
+    <Content Include="public\panchakarma\img\Xvideo-bg.jpg" />
+    <Content Include="public\panchakarma\index.html" />
+    <Content Include="public\panchakarma\js\.DS_Store" />
+    <Content Include="public\panchakarma\js\easing.min.js" />
+    <Content Include="public\panchakarma\js\hexagons.min.js" />
+    <Content Include="public\panchakarma\js\hoverIntent.js" />
+    <Content Include="public\panchakarma\js\jquery.ajaxchimp.min.js" />
+    <Content Include="public\panchakarma\js\jquery.counterup.min.js" />
+    <Content Include="public\panchakarma\js\jquery.magnific-popup.min.js" />
+    <Content Include="public\panchakarma\js\jquery.nice-select.min.js" />
+    <Content Include="public\panchakarma\js\jquery.sticky.js" />
+    <Content Include="public\panchakarma\js\mail-script.js" />
+    <Content Include="public\panchakarma\js\main.js" />
+    <Content Include="public\panchakarma\js\owl-carousel-thumb.min.js" />
+    <Content Include="public\panchakarma\js\owl.carousel.min.js" />
+    <Content Include="public\panchakarma\js\parallax.min.js" />
+    <Content Include="public\panchakarma\js\slick.js" />
+    <Content Include="public\panchakarma\js\superfish.js" />
+    <Content Include="public\panchakarma\js\superfish.min.js" />
+    <Content Include="public\panchakarma\js\tilt.jquery.min.js" />
+    <Content Include="public\panchakarma\js\vendor\bootstrap.min.js" />
+    <Content Include="public\panchakarma\js\vendor\jquery-2.2.4.min.js" />
+    <Content Include="public\panchakarma\js\waypoints.min.js" />
+    <Content Include="public\panchakarma\panchakarmalogo.png" />
+    <Content Include="public\panchakarma\scss\.DS_Store" />
+    <Content Include="public\panchakarma\scss\bootstrap.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\.DS_Store" />
+    <Content Include="public\panchakarma\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\bootstrap.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_navbar-align.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_alert.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_badge.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_button-group.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_buttons.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_card.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_carousel.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_close.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_code.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_dropdown.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_forms.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_functions.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_grid.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_images.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_input-group.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_list-group.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_media.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_mixins.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_modal.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_nav.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_navbar.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_pagination.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_popover.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_print.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_progress.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_reboot.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_root.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_tables.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_tooltip.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_transitions.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_type.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_utilities.scss" />
+    <Content Include="public\panchakarma\scss\bootstrap\_variables.scss" />
+    <Content Include="public\panchakarma\scss\main.scss" />
+    <Content Include="public\panchakarma\scss\theme\.DS_Store" />
+    <Content Include="public\panchakarma\scss\theme\_blog.scss" />
+    <Content Include="public\panchakarma\scss\theme\_elements.scss" />
+    <Content Include="public\panchakarma\scss\theme\_flexbox.scss" />
+    <Content Include="public\panchakarma\scss\theme\_footer.scss" />
+    <Content Include="public\panchakarma\scss\theme\_header.scss" />
+    <Content Include="public\panchakarma\scss\theme\_home.scss" />
+    <Content Include="public\panchakarma\scss\theme\_mixins.scss" />
+    <Content Include="public\panchakarma\scss\theme\_pages.scss" />
+    <Content Include="public\panchakarma\scss\theme\_predefined.scss" />
+    <Content Include="public\panchakarma\scss\theme\_reset.scss" />
+    <Content Include="public\panchakarma\scss\theme\_variables.scss" />
+    <Content Include="public\payment\css\global.css" />
+    <Content Include="public\payment\css\normalize.css" />
+    <Content Include="public\payment\demo\css\global.css" />
+    <Content Include="public\payment\demo\css\normalize.css" />
+    <Content Include="public\payment\demo\favicon.ico" />
+    <Content Include="public\payment\demo\index.html" />
+    <Content Include="public\payment\demo\script.js" />
+    <Content Include="public\payment\favicon.ico" />
+    <Content Include="public\payment\index.html" />
+    <Content Include="public\payment\package.json" />
+    <Content Include="public\payment\script.js" />
+    <Content Include="public\research-and-development.html" />
+    <Content Include="public\sms-drive\css\main.css" />
+    <Content Include="public\sms-drive\favicon.jpg" />
+    <Content Include="public\sms-drive\favicon.png" />
+    <Content Include="public\sms-drive\img\about-logo.png" />
+    <Content Include="public\sms-drive\img\bg_img1.jpg" />
+    <Content Include="public\sms-drive\img\bg_phone_girl.jpg" />
+    <Content Include="public\sms-drive\img\FacebookPhoneBanner.jpg" />
+    <Content Include="public\sms-drive\img\halfss1.png" />
+    <Content Include="public\sms-drive\img\halfss1_100px.png" />
+    <Content Include="public\sms-drive\img\halfss1_200px.png" />
+    <Content Include="public\sms-drive\img\halfss1_300px.png" />
+    <Content Include="public\sms-drive\img\halfss2.png" />
+    <Content Include="public\sms-drive\img\halfss2_200px.png" />
+    <Content Include="public\sms-drive\img\halfss2_300px.png" />
+    <Content Include="public\sms-drive\img\metapic500px.jpg" />
+    <Content Include="public\sms-drive\img\security.png" />
+    <Content Include="public\sms-drive\img\security_200px.png" />
+    <Content Include="public\sms-drive\img\security_300px.png" />
+    <Content Include="public\sms-drive\img\ss1.png" />
+    <Content Include="public\sms-drive\img\ss\sms_drive_cloud_messages.png" />
+    <Content Include="public\sms-drive\img\ss\sms_drive_device_messages.png" />
+    <Content Include="public\sms-drive\img\ss\sms_drive_home_screen.png" />
+    <Content Include="public\sms-drive\img\ss\sms_drive_login.png" />
+    <Content Include="public\sms-drive\img\ss\sms_drive_messages.png" />
+    <Content Include="public\sms-drive\img\ss\sms_drive_messages_screen.png" />
+    <Content Include="public\sms-drive\img\ss\sms_drive_settings_screen.png" />
+    <Content Include="public\sms-drive\img\ss\sms_drive_setting_screen.png" />
+    <Content Include="public\sms-drive\img\ss\sms_drive_subscription.png" />
+    <Content Include="public\sms-drive\index.html" />
+    <Content Include="public\sms-drive\js\main.js" />
+    <Content Include="public\sms-drive\owlcarousel\owl.carousel.min.css" />
+    <Content Include="public\sms-drive\owlcarousel\owl.carousel.min.js" />
+    <Content Include="public\sms-drive\owlcarousel\owl.theme.default.min.css" />
+    <Content Include="public\store\css\style.css" />
+    <Content Include="public\store\index.html" />
+    <Content Include="public\template.html" />
+    <Content Include="routes\index.js" />
+    <Content Include="routes\payment.js" />
+    <Content Include="routes\blog.js" />
+    <Content Include="routes\store.js" />
+    <Content Include="routes\cors.js" />
+    <Content Include="routes\users.js" />
+    <Content Include="package.json" />
+    <Content Include="public\stylesheets\main.css" />
+    <Content Include="README.md" />
+    <Content Include="views\index.pug" />
+    <Content Include="views\layout.pug" />
+    <Content Include="views\error.pug" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="public\bootstrap\" />
+    <Folder Include="public\bootstrap\4.4.1\" />
+    <Folder Include="public\bootstrap\4.4.1\css\" />
+    <Folder Include="public\bootstrap\4.5.0\" />
+    <Folder Include="public\bootstrap\4.5.0\css\" />
+    <Folder Include="public\bootstrap\4.5.0\js\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\img\" />
+    <Folder Include="public\img\ss\" />
+    <Folder Include="public\img\store\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\js\" />
+    <Folder Include="public\cors\" />
+    <Folder Include="public\owlcarousel\" />
+    <Folder Include="public\panchakarma\" />
+    <Folder Include="public\panchakarma\css\" />
+    <Folder Include="public\panchakarma\css\bootstrap\" />
+    <Folder Include="public\panchakarma\css\theme\" />
+    <Folder Include="public\panchakarma\fonts\" />
+    <Folder Include="public\panchakarma\img\" />
+    <Folder Include="public\panchakarma\img\blog\" />
+    <Folder Include="public\panchakarma\img\elements\" />
+    <Folder Include="public\panchakarma\img\screenshots\" />
+    <Folder Include="public\panchakarma\img\testimonial\" />
+    <Folder Include="public\panchakarma\js\" />
+    <Folder Include="public\panchakarma\js\vendor\" />
+    <Folder Include="public\panchakarma\scss\" />
+    <Folder Include="public\panchakarma\scss\bootstrap\" />
+    <Folder Include="public\panchakarma\scss\bootstrap\mixins\" />
+    <Folder Include="public\panchakarma\scss\bootstrap\utilities\" />
+    <Folder Include="public\panchakarma\scss\theme\" />
+    <Folder Include="public\payment\" />
+    <Folder Include="public\payment\css\" />
+    <Folder Include="public\payment\demo\" />
+    <Folder Include="public\payment\demo\css\" />
+    <Folder Include="public\sms-drive\" />
+    <Folder Include="public\sms-drive\css\" />
+    <Folder Include="public\sms-drive\img\" />
+    <Folder Include="public\sms-drive\img\ss\" />
+    <Folder Include="public\sms-drive\js\" />
+    <Folder Include="public\sms-drive\owlcarousel\" />
+    <Folder Include="public\store\" />
+    <Folder Include="public\store\css\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="routes\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

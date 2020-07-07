@@ -1,0 +1,33 @@
+.app-store-header{
+ 
+    background-image: url("../../img/store/abstract500px.jpg");
+    height: 50%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.596);
+    background-blend-mode: overlay;
+    background-position: center;
+    width: 100%;
+    
+}
+
+.store-item-browse{
+width: 15rem;
+}
+
+
+@media (max-width: 575.98px) {
+    .app-store-header{
+        background-image: url("../../img/store/abstract100px.jpg");
+        height: 50%;
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.596);
+        background-blend-mode: overlay;
+        
+    }
+    .store-item-browse{
+        width: 90%;
+        }
+        
+}

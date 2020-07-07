@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Check Cors</title>
+</head>
+<body>
+    <div id="txt"></div>
+    <div id="txt1"></div>
+    <div id="txt2"></div>
+
+    <script>
+        fetch('/cors/check')
+            .then(
+                function (response) {
+                    if (response.status !== 200) {
+                        console.log('Looks like there was a problem. Status Code: ' +
+                            response.status);
+
+                        document.getElementById("txt").innerHTML = 'Looks like there was a problem. Status Code: ' +
+                            response.status;
+
+                        return;
+                    }
+
+                    // Examine the text in the response
+                    response.json().then(function (data) {
+                        console.log(data);
+                        var ii = JSON.stringify(data);
+                        document.getElementById("txt1").innerHTML = ii;
+
+                    });
+                }
+            )
+            .catch(function (err) {
+                console.log('Fetch Error :-S', err);
+                document.getElementById("txt2").innerHTML = 'Fetch Error :-S', err;
+
+            });
+    </script>
+</body>
+</html>

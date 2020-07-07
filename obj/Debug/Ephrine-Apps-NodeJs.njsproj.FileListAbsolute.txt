@@ -1,0 +1,3 @@
+D:\Windows_Development\Visual Studio Projects\Ephrine-Apps-NodeJs\obj\Debug\Ephrine-Apps-NodeJs.njsproj.CoreCompileInputs.cache
+D:\Windows_Development\Visual Studio Projects\Ephrine-Apps-NodeJs\bin\Microsoft.NodejsTools.WebRole.dll
+D:\Windows_Development\Visual Studio Projects\Ephrine-Apps-NodeJs\obj\Debug\Ephrine-Apps-NodeJs.njsprojAssemblyReference.cache
